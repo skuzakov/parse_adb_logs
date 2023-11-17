@@ -19,7 +19,7 @@ for file in os.listdir(dir_path):
             for line2 in lines:
                 if word2 in line2:
                   list2.append(line2)
-                 # print(list2)
+
         # result = [None] * (len(list1) + len(list2))
         # result[::2] = list2
         # result[1::2] = list1
