@@ -39,5 +39,11 @@ for file in os.listdir(dir_path):
            log1.append(fin)
 
     result = '\n'.join(log1)
-    with open(f'{path}/parse_out.csv', "a") as myfile:
+    with open(f'{path}/draft.csv', "a") as myfile:
         myfile.write(result)
+with (open(f'{path}/draft.csv', 'r') as r,
+      open(f'{path}/parse_out.csv', 'w') as o):
+    for line in r:
+        if line.strip():
+            o.write(line)
+os.remove(f'{path}/draft.csv')
