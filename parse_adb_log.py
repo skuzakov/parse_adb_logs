@@ -35,7 +35,7 @@ for file in os.listdir(dir_path):
            ip_d.append((k[12].split(':'))[0])
 
         for a in range(len(ip_s)):
-           fin = f'{date[a]} {time[a]},{ip_s[a]},{ip_d[a]},'
+           fin = f'\n{date[a]} {time[a]},{ip_s[a]},{ip_d[a]},'
            log1.append(fin)
 
     result = '\n'.join(log1)
